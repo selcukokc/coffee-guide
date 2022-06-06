@@ -8,6 +8,7 @@
 ## Tech Stack
 * Kotlin
 * MVVM + Clean Arthitecture
+* Jetpack Compose
 * ViewModel
 * Hilt
 * Coroutines&Flow
