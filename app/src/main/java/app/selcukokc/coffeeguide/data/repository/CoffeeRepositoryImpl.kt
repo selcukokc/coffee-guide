@@ -4,7 +4,7 @@ import app.selcukokc.coffeeguide.data.source.CoffeeDataSource
 import app.selcukokc.coffeeguide.domain.repository.CoffeeRepository
 import javax.inject.Inject
 
-class CatBreedsRepositoryImpl @Inject constructor(
+class CoffeeRepositoryImpl @Inject constructor(
     private val coffeeDataSource: CoffeeDataSource,
 ): CoffeeRepository {
 

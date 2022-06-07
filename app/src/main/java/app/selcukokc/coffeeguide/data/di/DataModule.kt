@@ -1,7 +1,7 @@
 package app.selcukokc.coffeeguide.data.di
 
 import app.selcukokc.coffeeguide.data.network.api.CoffeeService
-import app.selcukokc.coffeeguide.data.repository.CatBreedsRepositoryImpl
+import app.selcukokc.coffeeguide.data.repository.CoffeeRepositoryImpl
 import app.selcukokc.coffeeguide.data.source.CoffeeDataSource
 import app.selcukokc.coffeeguide.data.source.CoffeeDataSourceImpl
 import app.selcukokc.coffeeguide.domain.repository.CoffeeRepository
@@ -15,11 +15,11 @@ import dagger.hilt.android.components.ViewModelComponent
 object DataModule {
 
     @Provides
-    fun provideCatBreedsDataSource(catBreedsService: CoffeeService): CoffeeDataSource =
-        CoffeeDataSourceImpl(catBreedsService)
+    fun provideCoffeeDataSource(coffeeService: CoffeeService): CoffeeDataSource =
+        CoffeeDataSourceImpl(coffeeService)
 
     @Provides
-    fun provideCatBreedsRepository(catBreedsDataSource: CoffeeDataSource): CoffeeRepository =
-        CatBreedsRepositoryImpl(catBreedsDataSource)
+    fun provideCoffeeRepository(coffeeDataSource: CoffeeDataSource): CoffeeRepository =
+        CoffeeRepositoryImpl(coffeeDataSource)
 
 }

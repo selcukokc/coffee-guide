@@ -33,7 +33,7 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideCatBreedsService(retrofit: Retrofit): CoffeeService {
+    fun provideCoffeeService(retrofit: Retrofit): CoffeeService {
         return retrofit.create(CoffeeService::class.java)
     }
 

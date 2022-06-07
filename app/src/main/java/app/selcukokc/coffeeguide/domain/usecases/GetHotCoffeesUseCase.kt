@@ -18,8 +18,8 @@ class GetHotCoffeesUseCase @Inject constructor(
 
         try {
             emit(RequestState.Loading<List<Coffee>>())
-            val catBreeds = coffeeRepository.getHotCoffees()
-            emit(RequestState.Success<List<Coffee>>(catBreeds))
+            val coffees = coffeeRepository.getHotCoffees()
+            emit(RequestState.Success<List<Coffee>>(coffees))
         } catch (e: Exception){
             emit(RequestState.Failure<List<Coffee>>(e.localizedMessage ?: "An unexpected error occurred"))
         }
