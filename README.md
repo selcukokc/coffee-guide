@@ -1,6 +1,6 @@
 # Coffee Guide App
 
-**Description**: A sample app to demonstrate how to implement MVVM + Clean Arthitecture on a Jetpack Compose UI based project.
+**Description**: A sample app to demonstrate how to implement MVVM + Clean Architecture on a Jetpack Compose UI based project.
 
 **App Content**: Coffee Guide has basic list of descriptions and ingredients used for the most popular coffee drinks.
 
